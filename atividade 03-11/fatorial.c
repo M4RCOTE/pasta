@@ -1,5 +1,5 @@
 /*
- * Arquivo: base.c
+ * Arquivo: fatorial.c
  * 03/11
  * Autor: Marco Túllio
  */
