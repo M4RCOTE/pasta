@@ -1,3 +1,9 @@
+/*
+ * Arquivo: base.c
+ * 03/11
+ * Autor: Marco Túllio
+ */
+
 #include <stdio.h>
 
 int fds(int a);
