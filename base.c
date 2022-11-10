@@ -1,8 +1,7 @@
 /*
  * Arquivo: base.c
- * Data criação
- * Autor: Igor Peretta
- * Meu primeiro programa em C
+ * 03/11
+ * Autor: Marco Túllio
  */
 #include <stdio.h>
 
