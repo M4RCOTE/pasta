@@ -1,3 +1,8 @@
+/*
+ * Arquivo: fibonacci.c
+ * 03/11
+ * Autor: Marco Túllio
+ */
 #include <stdio.h>
 
 
