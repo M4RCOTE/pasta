@@ -1,3 +1,10 @@
+/*
+ * Arquivo: cosTaylor.c
+ * 03/11
+ * Autor: Marco Túllio
+ */
+
+
 #include <stdio.h>
 #include <math.h>
 
