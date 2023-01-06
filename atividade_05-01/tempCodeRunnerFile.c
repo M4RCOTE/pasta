@@ -1,0 +1,1 @@
+%02d%s%04d\n", data.dia, strmes[data.mes], data.ano
