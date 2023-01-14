@@ -4,7 +4,6 @@
  * Autor: Marco Túllio
  */
 
-//Usei uma função pra limpar o buffer e só funciona no linux pelo que lí.
 
 #include <stdio.h>
 #include <string.h>
@@ -63,9 +62,7 @@ int main(void) {
         scanf("%d/%d/%d", &cad[i].aniversario.dia, &cad[i].aniversario.mes, &cad[i].aniversario.ano);
 
         printf("Entre com uma altura: ");
-        scanf("%d.%c%c", &cad[i].altura.metros, &cad[i].altura.centimetros[0], &cad[i].altura.centimetros[1]);
-
-        __fpurge(stdin);
+        scanf("%d.%c%c%*c", &cad[i].altura.metros, &cad[i].altura.centimetros[0], &cad[i].altura.centimetros[1]);
 
         printf("Entre com um peso: ");
         scanf("%f%c", &cad[i].peso, &s);
