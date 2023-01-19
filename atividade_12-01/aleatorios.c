@@ -28,6 +28,8 @@ int main(int argc, char** argv){
     printf("min: %d\n", min(v, n));
     printf("max: %d\n", max(v, n));
     printf("média: %lg\n", media(v, n));
+	
+	free(v);
 
 
 	return 0;
