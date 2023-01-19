@@ -32,6 +32,8 @@ int main(int argc, char** argv){
     printf("primeiro: %d\n", v[a]);
     printf("último: %d\n", v[b]);
     printf("média: %lg\n", media(v, b, a));
+	
+	free(v);
 
 	return 0;
 }
