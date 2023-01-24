@@ -7,34 +7,36 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int fib(int n);
-
 int main(void){
-    int *v, n;
+    int n;
+    long long int *v;
     FILE *pont_arq;
     
     pont_arq = fopen("fibonacci.txt", "w");
     printf("quantidade de elementos de v:\n");
     scanf("%d%*c", &n);
 
-    v = malloc (n * sizeof (int));
+    v = malloc (n * sizeof (long long int ));
 
-    for (int i =0; i<n;i++){
-        v[i] = fib(i);
-        fprintf(pont_arq, "%d\n", v[i]);
+    if(n > 0){
+        v[0] = 0;
+        fprintf(pont_arq, "%lld\n", v[0]);
     }
+    if(n > 1){
+        v[0] = 0;
+        v[1] = 1;
+        fprintf(pont_arq, "%lld\n%lld\n", v[0], v[1]);
+
+        for (int i = 2; i<n;i++){
+            v[i] = v[i-1] + v[i-2];
+            fprintf(pont_arq, "%lld\n", v[i]);
+        }
+    }
+
+    printf("%lld\n", v[n-1]);
 
     fclose(pont_arq);
+
     free(v);
     return 0;
-}
-
-int fib(int n){
-
-    if(n == 0){
-        return 1;
-    }else if(n == 1){
-        return 1;
-    }
-    return fib(n-1) + fib(n-2); 
 }
