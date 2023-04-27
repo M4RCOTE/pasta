@@ -1,7 +1,7 @@
 /*
  * Arquivo: base.c
  * 03/11
- * Autor: Marco Túllio
+ * Autor: Marco Túllioa
  */
 #include <stdio.h>
 
